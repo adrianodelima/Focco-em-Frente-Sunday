@@ -1,0 +1,127 @@
+html,
+body,
+#root {
+   min-height: 100%;
+}
+
+body {
+   background: radial-gradient(
+         circle,
+         rgba(255, 255, 255, 0.5) 0%,
+         rgb(73, 73, 73) 100%
+      ),
+      url("./assets/background.jpg") no-repeat;
+   background-size: cover;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   margin: 0;
+}
+
+.form-container {
+   /*centraliza o container (max width com width 100% para ele ocupar a tel atoda quando for menor que 450px*/
+   margin: 80px auto 0;
+   min-width: 450px;
+   /* utiliza o flex para que os items fiquem um abaixo do outro (alinhado ao centro) */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.content {
+   background-color: white;
+   margin-top: 50px;
+   border-radius: 5px;
+}
+
+.form-content {
+   padding: 30px;
+}
+
+.home-content {
+   padding: 30px;
+   width: "900px"
+}
+
+.logo-container {
+   border-radius: 5px 5px 0px 0px;
+   display: flex;
+   padding: 20px;
+   align-items: center;
+   background: #9477E6;
+}
+
+.logo-container img{
+   margin: 0 auto;
+}
+
+.content > p {
+   font-size: 22px;
+   line-height: 30px;
+   margin-bottom: 30px;
+}
+
+.content form {
+   display: flex;
+   flex-direction: column;
+}
+
+.content form label {
+   font-size: 14px;
+   color: #444;
+   font-weight: bold;
+   margin-bottom: 8px;
+}
+
+.content form input {
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 2px;
+   height: 45px;
+   padding: 0 15px;
+   font-size: 16px;
+}
+
+.btn {
+   border: 0;
+   border-radius: 5px;
+   width: 100%;
+   height: 42px;
+   padding: 0 20px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   margin: 2px 0px;
+}
+
+.btn-green {
+   background-color: #ffd413;
+   color: #444;
+   transition: 0.3s;
+}
+
+
+.btn-green:hover {
+   background-color: #e4be16;
+   color: #444;
+}
+
+.btn-purple {
+   background-color: #9477E6;
+   color: white;
+   transition: 0.3s;
+}
+
+.btn-purple:hover {
+   background-color: #7c60ca;
+   color: white;
+}
+
+.btn-red {
+   background-color:#fd265f;
+   color: white;
+   transition: 0.3s;
+}
+
+.btn-red:hover {
+   background-color: #da2454;
+   color: white;
+}
